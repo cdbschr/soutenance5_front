@@ -7,9 +7,11 @@ specifiers:
   '@typescript-eslint/parser': ^5.56.0
   autoprefixer: ^10.4.14
   eslint: ^8.36.0
+  eslint-plugin-svelte: ^2.23.1
   postcss: ^8.4.21
   postcss-load-config: ^4.0.1
   prettier: ^2.8.6
+  prettier-plugin-svelte: ^2.10.0
   svelte: ^3.55.1
   svelte-check: ^2.10.3
   svelte-preprocess: ^5.0.3
@@ -27,9 +29,11 @@ devDependencies:
   '@typescript-eslint/parser': 5.56.0_vgl77cfdswitgr47lm5swmv43m
   autoprefixer: 10.4.14_postcss@8.4.21
   eslint: 8.36.0
+  eslint-plugin-svelte: 2.23.1_wzem237sbvnwe7n34ytc5phasy
   postcss: 8.4.21
   postcss-load-config: 4.0.1_postcss@8.4.21
   prettier: 2.8.6
+  prettier-plugin-svelte: 2.10.0_bzjcbf5vweu43cmyrxgltnmf74
   svelte: 3.57.0
   svelte-check: 2.10.3_luph556zpodi3vqhnlezpo6clm
   svelte-preprocess: 5.0.3_c6mofh3fyngshztmustucto3tq
@@ -812,6 +816,32 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
+  /eslint-plugin-svelte/2.23.1_wzem237sbvnwe7n34ytc5phasy:
+    resolution: {integrity: sha512-hBlptt4auhlae+/cSsOdaB7MV+LcXpyOV0bMAQxXi72oAlCGBCWBSdQbiRmn1OkikfhQKkAe7gjk+XseBYAbyA==}
+    engines: {node: ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      eslint: ^7.0.0 || ^8.0.0-0
+      svelte: ^3.37.0
+    peerDependenciesMeta:
+      svelte:
+        optional: true
+    dependencies:
+      '@eslint-community/eslint-utils': 4.3.0_eslint@8.36.0
+      '@jridgewell/sourcemap-codec': 1.4.14
+      debug: 4.3.4
+      eslint: 8.36.0
+      esutils: 2.0.3
+      known-css-properties: 0.27.0
+      postcss: 8.4.21
+      postcss-load-config: 3.1.4_postcss@8.4.21
+      postcss-safe-parser: 6.0.0_postcss@8.4.21
+      svelte: 3.57.0
+      svelte-eslint-parser: 0.24.2_svelte@3.57.0
+    transitivePeerDependencies:
+      - supports-color
+      - ts-node
+    dev: true
+
   /eslint-scope/5.1.1:
     resolution: {integrity: sha512-2NxwbF/hZ0KpepYN0cNbo+FN6XoK7GaHlQhgx/hIZl6Va0bF45RQOOwhLIy8lQDbuCiadSLCBnH2CFYquit5bw==}
     engines: {node: '>=8.0.0'}
@@ -1163,6 +1193,10 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
+  /known-css-properties/0.27.0:
+    resolution: {integrity: sha512-uMCj6+hZYDoffuvAJjFAPz56E9uoowFHmTkqRtRq5WyC5Q6Cu/fTZKNQpX/RbzChBYLLl3lo8CjFZBAZXq9qFg==}
+    dev: true
+
   /levn/0.4.1:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
     engines: {node: '>= 0.8.0'}
@@ -1434,6 +1468,15 @@ packages:
       postcss-selector-parser: 6.0.11
     dev: true
 
+  /postcss-safe-parser/6.0.0_postcss@8.4.21:
+    resolution: {integrity: sha512-FARHN8pwH+WiS2OPCxJI8FuRJpTVnn6ZNFiqAM2aeW2LwTHWWmWgIyKC6cUo0L8aeKiF/14MNvnpls6R2PBeMQ==}
+    engines: {node: '>=12.0'}
+    peerDependencies:
+      postcss: ^8.3.3
+    dependencies:
+      postcss: 8.4.21
+    dev: true
+
   /postcss-selector-parser/6.0.11:
     resolution: {integrity: sha512-zbARubNdogI9j7WY4nQJBiNqQf3sLS3wCP4WfOidu+p28LofJqDH1tcXypGrcmMHhDk2t9wGhCsYe/+szLTy1g==}
     engines: {node: '>=4'}
@@ -1458,6 +1501,16 @@ packages:
   /prelude-ls/1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
+    dev: true
+
+  /prettier-plugin-svelte/2.10.0_bzjcbf5vweu43cmyrxgltnmf74:
+    resolution: {integrity: sha512-GXMY6t86thctyCvQq+jqElO+MKdB09BkL3hexyGP3Oi8XLKRFaJP1ud/xlWCZ9ZIa2BxHka32zhHfcuU+XsRQg==}
+    peerDependencies:
+      prettier: ^1.16.4 || ^2.0.0
+      svelte: ^3.2.0
+    dependencies:
+      prettier: 2.8.6
+      svelte: 3.57.0
     dev: true
 
   /prettier/2.8.6:
@@ -1683,6 +1736,21 @@ packages:
       - sass
       - stylus
       - sugarss
+    dev: true
+
+  /svelte-eslint-parser/0.24.2_svelte@3.57.0:
+    resolution: {integrity: sha512-MYZYe8Z7C3eoZxF1VPOeVGe98BrgiX07+roCesACzCxCKpUkFJhi4w5JZwjdw60LGF71rfMJNypwb7AIG1/DYA==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      svelte: ^3.37.0
+    peerDependenciesMeta:
+      svelte:
+        optional: true
+    dependencies:
+      eslint-scope: 7.1.1
+      eslint-visitor-keys: 3.3.0
+      espree: 9.5.0
+      svelte: 3.57.0
     dev: true
 
   /svelte-hmr/0.15.1_svelte@3.57.0:
