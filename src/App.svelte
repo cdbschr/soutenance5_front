@@ -1,9 +1,10 @@
 <script lang="ts">
+  import Router from 'svelte-spa-router';
+  import { routes } from './routes';
 </script>
 
 <main>
-  <h1 class="text-9xl">Test</h1>
 </main>
-
+  <Router {routes} />
 <style>
 </style>
