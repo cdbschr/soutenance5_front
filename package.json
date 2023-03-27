@@ -18,6 +18,7 @@
     "@typescript-eslint/eslint-plugin": "^5.56.0",
     "@typescript-eslint/parser": "^5.56.0",
     "autoprefixer": "^10.4.14",
+    "dotenv": "^16.0.3",
     "eslint": "^8.36.0",
     "eslint-plugin-svelte": "^2.23.1",
     "postcss": "^8.4.21",
@@ -33,5 +34,8 @@
     "typescript": "^4.9.3",
     "url-slug": "^3.0.4",
     "vite": "^4.2.0"
+  },
+  "dependencies": {
+    "js-cookie": "^3.0.1"
   }
 }
