@@ -15,6 +15,6 @@
   </div>
   <div class="flex flex-wrap sm:flex-nowrap justify-center w-full sm:w-1/2">
     <Button text="S'inscrire" link="/register" />
-    <Button text="Se connecter" link="/login" secondary />
+    <Button text="Se connecter" link="/login" primary={false} secondary />
   </div>
 </main>

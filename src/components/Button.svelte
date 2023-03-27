@@ -11,7 +11,7 @@
 
 <a href="/#{link}" class="flex justify-center w-full">
   <button
-    class="my-3 py-2 px-4 w-3/4 md:w-1/10 text-base rounded border-2 border-transparent focus:outline-none
+    class="my-3 py-2 px-4 w-3/4 md:w-1/10 rounded border-2 border-transparent focus:outline-none
     {primary ? 'bg-violet-600 text-white border-violet-600' : ''}
     {secondary ? 'bg-white text-violet-600 border-violet-600' : ''}
     {disabled ? 'cursor-not-allowed opacity-50' : 'cursor-pointer'}"
